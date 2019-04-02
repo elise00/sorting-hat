@@ -12,29 +12,28 @@ body {
 
 .jumbotron {
   /* background-color: black; */
-  background-image: url(../img/hogwarts.jpg);
+  background-image: url(../img/dininghall.png);
   background-repeat: no-repeat;
-  background-position: top right;
-  background-size: contain;
-  text-align: left;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
   background-color: black;
 }
 
 #form {
   text-align: left;
   margin-left: 100px;
-  float: left;
 }
 
 .poem {
-
+  font-family: 'Dancing Script', cursive;
 }
 
 img {
   width: 40%;
   margin: auto;
   border-radius: 25px;
-
+  float: right;
 }
 
 h4 {
