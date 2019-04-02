@@ -1,0 +1,15 @@
+body {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.jumbotron {
+  background-color: black;
+}
+
+img {
+  width: 50%;
+  margin: auto;
+  border-radius: 25px;
+}
