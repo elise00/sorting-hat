@@ -32,28 +32,30 @@ Student.prototype.chooseHouse = function() {
 // UI logic
 
 $(document).ready(function(){
-  $('.allHousesDivClass').hide;
+  $('.answer').hide;
 
 
-  $('form#formId').submit(function(event){
+  $('form#form').submit(function(event){
+    event.preventDefault();
 
     var studentName = $('input#nameInput').val();
-
-
-
-
     var newStudent = new Student(studentName);
-    $("#hatform input[type=radio]:checked").each(function() {
-       newStudent.answers.push($(this).val());
-   });
 
-    $('#housediv').show();
+    $("#form input[type=radio]:checked").each(function() {
+       newStudent.answers.push($(this).val());
+    });
+    newStudent.chooseHouse();
+
+    $('.housename').text(newStudent.house);
+    $('.studentName').text(studentName);
+    $('#form').hide();
+    $('.answer').show();
   });
 
   $('#refreshButton').click(function(event){
 
     $('.classname').prop('checked', false);
-
+    $('.answer').hide();
 
 
   });
