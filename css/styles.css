@@ -31,7 +31,8 @@ body {
 
 img {
   width: 40%;
-  margin: auto;
+  margin-top: 200px;
+  margin-right: 175px;
   border-radius: 25px;
   float: right;
 }
@@ -46,4 +47,8 @@ h4 {
 
 .answer {
   text-align: center;
+}
+
+#nameInput {
+  color: black;
 }
