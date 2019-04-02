@@ -2,9 +2,17 @@ body {
   background-color: black;
   color: white;
   text-align: center;
+  font-family: 'Sree Krushnadevaraya', serif;
+  font-size: 20px;
 }
 
 .jumbotron {
+  /* background-color: black; */
+  background-image: url(../img/hogwarts.jpg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
+  text-align: left;
   background-color: black;
 }
 
