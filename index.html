@@ -14,7 +14,7 @@
       <h2><em>Welcome to Hogwarts, Young Witches and Wizards!</em></h2>
       <h1>NOW 'TIS TIME TO DON THE SORTING HAT...</h1>
     </div>
-      <p><em>You might belong in Gryffindor, Where dwell the brave at heart,
+      <p class="poem"><em>You might belong in Gryffindor, Where dwell the brave at heart,
       <br>Their daring, nerve and chivalry, set Gryffindors apart;
       <br>
       <br>You might belong in Hufflepuff where they are just and loyal,
@@ -105,10 +105,19 @@
         <label class="radiopadding">
           <input type="radio" id="environmentChoice3" name="environment" value="3"> Yellow
         </label>
+      </div>
+      
+        <button class="btn btn-danger" type="submit" id="subbtn">Don the hat!</button>
   </form>
 
+  <div class="answer">
     <h1><em>BETTER BE... <span class="housename"></span>!</em></h1>
-    <img src="img/gryffindor.jpg" alt="">
+    <p></p>
+    <img id="gryimg" src="img/gryffindor.jpg" alt="Gryffindor">
+    <img id="slyimg" src="img/slytherin.jpg" alt="Slytherin">
+    <img id="huffimg" src="img/hufflepuff.jpg" alt="Hufflepuff">
+    <img id="ravimg" src="img/ravenclaw.jpg" alt="Ravenclaw">
+  </div>
 
   </body>
 </html>

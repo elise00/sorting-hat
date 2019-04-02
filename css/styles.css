@@ -1,3 +1,7 @@
+.answer {
+  /* display: none; */
+}
+
 body {
   background-color: black;
   color: white;
@@ -19,10 +23,15 @@ body {
 #form {
   text-align: left;
   margin-left: 100px;
+  float: left;
+}
+
+.poem {
+
 }
 
 img {
-  width: 50%;
+  width: 40%;
   margin: auto;
   border-radius: 25px;
 
@@ -30,4 +39,12 @@ img {
 
 h4 {
   font-size: 25px;
+}
+
+.btn {
+  font-size: 20px;
+}
+
+.answer {
+  text-align: center;
 }
