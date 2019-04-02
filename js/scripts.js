@@ -53,7 +53,7 @@ $(document).ready(function(){
   $('#refreshButton').click(function(event){
 
     $('.classname').prop('checked', false);
-    
+
 
 
   });
