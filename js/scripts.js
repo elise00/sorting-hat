@@ -40,6 +40,7 @@ Student.prototype.chooseHouse = function() {
 
 
 
+
 // UI logic
 
 $(document).ready(function(){
@@ -51,6 +52,10 @@ $(document).ready(function(){
     event.preventDefault();
 
     var studentName = $('input#nameInput').val();
+    if (studentName === '') {
+      studentName = 'Young wizard...';
+    }
+
     var newStudent = new Student(studentName);
 
     $("#form input[type=radio]:checked").each(function() {
