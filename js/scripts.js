@@ -5,6 +5,7 @@ function Student(name) {
   this.answers = [];
   this.houseNum = 0;
   this.house = '';
+  this.img = '';
 }
 
 Student.prototype.answerCount = function() {
@@ -20,12 +21,16 @@ Student.prototype.answerCount = function() {
 Student.prototype.chooseHouse = function() {
   if (this.houseNum === 1) {
     this.house = 'Gryffindor';
+    $("#houseimg").attr("src","img/gryffindor.jpg");
   } else if (this.houseNum === 2) {
     this.house = 'Slytherin';
+    $("#houseimg").attr("src","img/slytherin.jpg");
   } else if (this.houseNum === 3) {
     this.house = 'Hufflepuff';
+    $("#houseimg").attr("src","img/hufflepuff.jpg");
   } else if (this.houseNum === 4) {
     this.house = 'Ravenclaw';
+    $("#houseimg").attr("src","img/ravenclaw.jpg");
   }
 }
 
@@ -35,7 +40,7 @@ Student.prototype.chooseHouse = function() {
 
 $(document).ready(function(){
   $('.answer').hide();
-
+  $('#refreshbtn').hide();
 
   $('form#form').submit(function(event){
     event.preventDefault();
@@ -50,16 +55,22 @@ $(document).ready(function(){
     newStudent.chooseHouse();
 
     $('.housename').text(newStudent.house);
+    console.log(newStudent);
     $('.studentName').text(studentName);
+
+
     $('#form').hide();
     $('.answer').show();
+
+
   });
 
-  $('#refreshButton').click(function(event){
+  $('#refreshbtn').click(function(event){
 
-    $('.classname').prop('checked', false);
+    // $('.classname').prop('checked', false);
     $('.answer').hide();
-
+    $('#form').show();
+    $('refreshbtn').hide();
 
   });
 
