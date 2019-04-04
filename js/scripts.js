@@ -84,7 +84,7 @@ $(document).ready(function(){
     $('#refreshbtn').hide();
     $('#subbtn').show();
     $('.defaultradio').prop('checked', true);
-
+    $('input#nameInput').val('');
   });
 
 
