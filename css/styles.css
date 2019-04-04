@@ -29,12 +29,10 @@ body {
   font-family: 'Dancing Script', cursive;
 }
 
-img {
-  width: 40%;
-  margin-top: 200px;
-  margin-right: 175px;
+.song {
+  background-image: center;
   border-radius: 25px;
-  float: right;
+  margin-bottom: 50px;
 }
 
 h4 {
