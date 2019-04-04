@@ -41,6 +41,7 @@ h4 {
 
 .btn {
   font-size: 20px;
+  margin-top: 25px;
 }
 
 .answer {
@@ -54,9 +55,16 @@ h4 {
 #houseimg {
   width: 40%;
   border-radius: 25px;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
+  margin-top: 35px;
 }
 
 footer {
   margin-top: 60px;
+}
+.description {
+  font-size: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 35px;
 }
