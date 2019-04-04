@@ -70,7 +70,8 @@ $(document).ready(function(){
     // $('.classname').prop('checked', false);
     $('.answer').hide();
     $('#form').show();
-    $('refreshbtn').hide();
+    $('#refreshbtn').hide();
+    $('#')
 
   });
 
