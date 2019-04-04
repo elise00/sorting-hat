@@ -78,6 +78,7 @@ $(document).ready(function(){
     $('#form').show();
     $('#refreshbtn').hide();
     $('#subbtn').show();
+    $('.defaultradio').prop('checked', true);
 
   });
 
