@@ -10,9 +10,11 @@ function Student(name) {
 Student.prototype.answerCount = function() {
   var answerCount = 0;
   this.answers.forEach(function(answer){
-    answersCount += parseInt(answer);
+    answerCount += parseInt(answer);
   })
-  this.houseNum = Math.round(answerCount);
+  // console.log(`answerCount === ${answerCount}`);
+  this.houseNum = Math.round((answerCount/5));
+  // console.log(`this.houseNum === ${this.houseNum}`);
 }
 
 Student.prototype.chooseHouse = function() {
@@ -32,7 +34,7 @@ Student.prototype.chooseHouse = function() {
 // UI logic
 
 $(document).ready(function(){
-  $('.answer').hide;
+  $('.answer').hide();
 
 
   $('form#form').submit(function(event){
@@ -44,6 +46,7 @@ $(document).ready(function(){
     $("#form input[type=radio]:checked").each(function() {
        newStudent.answers.push($(this).val());
     });
+    newStudent.answerCount();
     newStudent.chooseHouse();
 
     $('.housename').text(newStudent.house);
